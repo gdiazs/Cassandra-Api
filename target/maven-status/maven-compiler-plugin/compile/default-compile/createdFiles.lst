@@ -1,0 +1,13 @@
+indigital\com\service\BunisessServiceRS.class
+indigital\com\web\ConfiguracionBean.class
+test\Test.class
+indigital\com\service\BusinessServiceRemote.class
+indigital\com\datos\Conexion.class
+indigital\com\datos\EmpresaJDBCRemote.class
+indigital\com\service\BusinessServiceImpl.class
+indigital\com\domain\Empresa.class
+indigital\com\datos\EmpresaJDBC.class
+indigital\com\service\BusinessService.class
+indigital\com\web\DeleteSend.class
+indigital\com\datos\EmpresaJDBCImpl.class
+indigital\com\datos\BusinessDataJDBC.class
