@@ -15,7 +15,7 @@ public class BusinessDataJDBC {
         List<Empresa> empresas = new ArrayList<>();
         List<Row> empresasquery = rs.all();
         for (Row empre : empresasquery) {
-            String uuid = empre.getUUID("id").toString();
+            String uuid = empre.getString("id");
             String razon = empre.getString("razon_social");
             String ruc = empre.getString("ruc");
             Empresa empresa1 = new Empresa(uuid, razon, ruc);

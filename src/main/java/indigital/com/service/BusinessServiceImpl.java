@@ -7,7 +7,7 @@ import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 @Stateless
-public class BusinessServiceImpl implements BusinessService {
+public class BusinessServiceImpl implements BusinessService, BusinessServiceRemote {
 
     @EJB
     private EmpresaJDBC empresajdbc;

@@ -10,7 +10,7 @@ import javax.ejb.Stateless;
 
 
 @Stateless
-public class EmpresaJDBCImpl implements EmpresaJDBC, EmpresaJDBCRemote {
+public class EmpresaJDBCImpl implements EmpresaJDBC {
 
     @Override
     public List<Empresa> listBusiness() {
@@ -19,7 +19,7 @@ public class EmpresaJDBCImpl implements EmpresaJDBC, EmpresaJDBCRemote {
         List<Empresa> empresas = new ArrayList<>();
         List<Row> empresasquery = rs.all();
         for (Row empre : empresasquery) {
-            String uuid = empre.getUUID("id").toString();
+            String uuid = empre.getString("id");
             String razon = empre.getString("razon_social");
             String ruc = empre.getString("ruc");
             Empresa empresa1 = new Empresa(uuid, razon, ruc);

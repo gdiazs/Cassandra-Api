@@ -5,7 +5,7 @@ import com.datastax.driver.core.Session;
 
 public class Conexion {
 
-    private static final String IP_RPC_CASSANDRA = "192.168.19.109";
+    private static final String IP_RPC_CASSANDRA = "localhost";
     private static final int PORT_RPC_CASSANDRA = 9042;
     private static Cluster cluster;
 
